@@ -1,18 +1,9 @@
 defmodule Frank do
-  @moduledoc """
-  Documentation for `Frank`.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Frank.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def greeting do
+    if Frank.Doug.on?(:be_kind) do
+      "hello there"
+    else
+      "go away"
+    end
   end
 end
